@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/login.css">
+  <title>login-page</title>
+</head>
+<body>
+  <div class="modal">
+    <div class="modal__card">
+      <div class="modal__title--section">
+        <h1 class="modal__title">Olá, tudo bem? 👋</h1>
+        <p class="modal__info">Vamos decolar para grandes dias de vendas.</p>
+      </div>
+
+      <div class="input__form">
+      <form class="modal__input--section">
+          <div class="input__email">
+            <label class="modal__label--email" for="email">Seu E-mail</label>
+            <input required class="modal__input--email" id="email" placeholder="exemplo@email.com" type="email">
+
+            <span class="input__caption--alert">Este e-mail não existe, você tem outro?</span>
+          </div>
+
+          <div class="input__password">
+            <label class="modal__label--password" for="password">Sua Senha</label>
+            <div class="input__password--icon--input">
+              <input required class="modal__input--password" placeholder="Digite sua senha" type="password">
+              <input class="modal__password--icon" type="checkbox">
+            </div>
+          </div>  
+
+        <div class="modal__input--options">
+          <div class="input__options--conected">
+            <input id="input__options--checkbox" class="input__options--checkbox" type="checkbox" checked>
+            <label for="input__options--checkbox" class="input__options--stay">Manter conectado</label>
+          </div>
+          <a class="input__forgot--password" href="#">Esqueci minha senha</a>        
+        </div>
+
+          <button type="submit" class="modal__enter-btn">Entrar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/javascript/login.js"></script>
+</body>
+</html>

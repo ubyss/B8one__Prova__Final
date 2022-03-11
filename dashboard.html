@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/dashboard.css">
+</head>
+<body>
+  <div id="preloader">
+    <img src="./assets/img/preloader.gif" alt="preloader">
+  </div>
+  <header class="top__bar">
+    <div class="nav__hamburguer">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 12.0001H21" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 6H15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 17.9999H15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="close-navbar">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="24" height="24" fill="white"/>
+        <rect x="-0.000305176" width="24" height="24" fill="#142159"/>
+        <path d="M20.25 3.75L3.75 20.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3.75 3.75L20.25 20.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        
+    </div>
+    <div class="info__org--user">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="16" cy="16" r="16" fill="#F1F2F9"/>
+        <path d="M6.44356 10.8182H8.70066L11.7234 18.196H11.8427L14.8654 10.8182H17.1225V21H15.3526V14.005H15.2582L12.4443 20.9702H11.1218L8.3079 13.9901H8.21344V21H6.44356V10.8182ZM19.0611 21V10.8182H25.6832V12.3643H20.9055V15.1286H25.3402V16.6747H20.9055V19.4538H25.723V21H19.0611Z" fill="#425DC7"/>
+        </svg>
+      <span class="info__org--name">Minha Empresa</span>
+    </div>
+    <nav class="nav__user">
+      <div class="nav__user--profile">
+        <div class="dropdown__help">
+        <svg class="nav__user--help" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#CDD2EB" stroke="#CDD2EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M9.09003 9.00002C9.32513 8.33169 9.78918 7.76813 10.4 7.40915C11.0108 7.05018 11.7289 6.91896 12.4272 7.03873C13.1255 7.15851 13.7588 7.52154 14.2151 8.06355C14.6714 8.60555 14.9211 9.29154 14.92 10C14.92 12 11.92 13 11.92 13" stroke="#142159" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M12 17H12.0094" stroke="#142159" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="help__dropdown">
+            <div class="dropdown-content--arrow"></div>
+            <div class="help__dropdown--links">
+              <a href="#"><span class="help__dropdown--center">Central de Ajuda</span></a>
+              <a href="#"><span class="help__dropdown--tutors">Tutoriais</span></a>
+              <a href="#"><span class="help__dropdown--contact">Falar com Especialista</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown__notification">
+          <svg class="nav__user--notification" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.5 8.40096C17.5 6.96853 16.9205 5.59478 15.8891 4.5819C14.8576 3.56903 13.4587 3 12 3C10.5413 3 9.14236 3.56903 8.11091 4.5819C7.07946 5.59478 6.5 6.96853 6.5 8.40096C6.5 14.7021 3.75 16.5024 3.75 16.5024H20.25C20.25 16.5024 17.5 14.7021 17.5 8.40096Z" fill="#CDD2EB" stroke="#CDD2EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13.5859 20.1028C13.4248 20.3756 13.1934 20.6021 12.9151 20.7595C12.6368 20.9169 12.3213 20.9998 12.0001 20.9998C11.6789 20.9998 11.3634 20.9169 11.085 20.7595C10.8067 20.6021 10.5754 20.3756 10.4142 20.1028" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="18" cy="3.75" r="3" fill="#F03460"/>
+            </svg>
+            <div class="notification__dropdown">
+              <div class="arrow--notification"></div>
+              <div class="notification__dropdown--links">
+                  <div class="notification__dropdown--title">
+                    <div class="notification__icon">👋</div>
+                    <h2 class="notification__text">Bem-vindo(a) a Hubly Retailer</h2>
+                    <div class="notification__timer">10 min</div>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="6" cy="6" r="6" fill="#F03460"/>
+                      </svg>
+                  </div>
+                  <p class="notification--information">Para uma completa experiência com 
+                    a Retailer, precisamos que você siga 
+                    os passos abaixo.</p>
+                    <form class="checkbox__inputs">
+                      <div class="first__selection">
+                        <input id="check-input" class="input__options--checkbox" type="checkbox" checked disabled>
+                        <label for="check-input" class="notification__firststep">Cadastrar Organização</label>
+                      </div>
+                      <div class="second__selection">
+                        <input id="empty-input" class="input__options--checkbox"  type="checkbox">
+                        <label for="empty-input" class="notification__secondstep">Convidar Revendedores</label>
+                      </div>
+                      <span ><a class="second__selection--anchor" href="">Vamos lá!</a></span>
+                    </form>
+                  </div>
+                    <div class="report__ready">
+                      <div class="report__title">
+                        <span class="report__ready--icon">📈</span>
+                        <h3 class="report__ready--text">O seu Relatório Mensal está pronto!</h3>
+                        <span class="report__ready--timer">12 min</sp>
+                    </div>
+                    <a class="report__ready--anchor" href="">Ir para Relatórios</a>
+                  </div>
+                  <div class="report__ready--footer">
+                    <button class="report__ready--button">Marcar como lida</button>
+                  </div>
+                </div>
+              </div>
+          <div class="dropdown__user user__profile">
+              <div class="user__dropdown">
+                <div class="dropdown-content--arrow"></div>
+                <div class="user__dropdown--links">
+                  <div class="user__dropdown--center">
+                    <span class="user__dropdown--greetings">Olá,</span>
+                    <span class="user__dropdown--name">Henrique 👋</span>
+                  </div>
+                  <div class="user__options">
+                    <span class="user__options--profile">Minha Conta</span>
+                    <span class="user__options--leave">Sair</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+    </nav>
+  </header>
+  <main class="main__board">
+    <aside class="aside__bar" id="mySidenav">
+      <nav class="aside__navbar">
+        <ul class="aside_-bar--items"></ul>
+      </nav>
+      <div class="aside__promo">
+        <div class="aside__promo--title">
+          <img class="promo__icon" src="./assets/img/rocket.svg" alt="" srcset="">
+          <h3 class="promo__text">Libere novos recursos
+            e decole seu negócio</h3>
+        </div>
+          <button class="promo__btn">Faça um upgrade!</button>
+      </div>
+    </aside>
+    <div class="info__board">
+      <div class="info__popup">
+        <div class="info__popup--group">
+        <svg class="info__popup--icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 23.732 8.26801 30 16 30Z" fill="#F1F2F9" stroke="#F1F2F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16 21.6V16" stroke="#425DC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16 10.3996H16.012" stroke="#425DC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <p class="info__popup--text">🔥 <span class="info__popup--strongtext">Lançamento</strong> 🔥 Nova Ferramenta de Carrinhos Abandonados 😍</p>
+          </div>
+          <a href="#" class="info__popup--link">Conheça a nova ferramenta</a>
+      </div>
+      <section class="report__board">
+        <div class="report_board--title">
+          <h1 class="report__info">Resumo de dados</h1>
+          <div class="report__buttons">
+            <button class="report__button report__button--active">Últimos 7 dias</button>
+            <button class="report__button ">Últimos 15 dias</button>
+            <button class="report__button ">Último mês</button>
+            <button class="report__button ">Último ano</button>
+            <button class="report__button report__button--personalize">Personalizado
+              <svg class="report__button--arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.00016 6.5L8.00016 9.5L11.0002 6.5" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+          </div>
+          <p class="report_board--text">Exibindo dados do período <span class="report_board--datetext">1 de novembro à 8 de novembro de 2021</span></p>
+        </div>
+        <div class="general__report">
+          <div class="general__report--block">
+          <div class="general__report--header">
+            <img class="general__report--icon" src="./assets/img/graph.png" alt="" srcset="">
+            <h2 class="general__report--title">Relatório geral</h2>
+          </div>
+            <div class="tab">
+              <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'Vendas')">Vendas</button>
+              <button class="tablinks" onclick="openCity(event, 'Pedidos')">Pedidos</button>
+              <button class="tablinks" onclick="openCity(event, 'Revendedores')">Revendedores</button>
+            </div>
+            <div id="Vendas" class="tabcontent">
+              <div class="sales__group"></div>
+              <div class="chart-container">
+                <canvas class="sales__graph" id="myChart"></canvas>
+              </div>
+              <div class="graph__legend">
+                <div class="graph__legend--item">
+                  <svg class="legend__item--icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6" cy="6" r="6" fill="#425DC7"/>
+                    </svg>
+                    <span class="legend__item--text">Estornado</span>
+                </div>
+                <div class="graph__legend--item">
+                  <svg class="legend__item--icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6" cy="6" r="6" fill="#F03460"/>
+                    </svg>
+                    <span class="legend__item--text">Cancelado</span>
+                </div>
+                <div class="graph__legend--item">
+                  <svg class="legend__item--icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6" cy="6" r="6" fill="#FFBE00"/>
+                    </svg>
+                    <span class="legend__item--text">Não Pago</span>
+                </div>
+                <div class="graph__legend--item">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6" cy="6" r="6" fill="#2EB042"/>
+                    </svg>                    
+                    <span class="legend__item--text">Pago</span>
+                </div>
+              </div>
+            </div>
+            <div id="Pedidos" class="tabcontent">
+              <div class="chart-container">
+                <canvas class="requests__graph" id="secondGraph"></canvas>
+              </div>
+              <div class="graph__legend">
+                <div class="graph__legend--item">
+                  <svg class="legend__item--icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6" cy="6" r="6" fill="#425DC7"/>
+                    </svg>
+                    <span class="legend__item--text">Total de pedidos</span>
+                </div>
+              </div>
+            </div>
+            <div id="Revendedores" class="tabcontent">
+              <div class="reaseales__block">
+              <div class="resales__block--left">
+                <div class="reseales__block--select">
+                  <p class="reseale--text"><span class="reseale__text--grey">Mostrar</span> todos os revendedores</p>
+                  <svg class="reseale--arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.50024 9.75L12.0002 14.25L16.5002 9.75" stroke="#555555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                    
+                </div>
+                  <div class="chart-container">
+                    <canvas class="resales__graph" id="thirdGraph"></canvas>
+                  </div>
+                  <div class="graph__legend">
+                    <div class="graph__legend--item">
+                      <svg class="legend__item--icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#425DC7"/>
+                        </svg>
+                        <span class="legend__item--text">Valor total de vendas</span>
+                    </div>
+                    <div class="graph__legend--item">
+                      <svg class="legend__item--icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#2EB042"/>
+                        </svg>
+                        <span class="legend__item--text">Quantidade de pedidos</span>
+                    </div>
+                    <div class="graph__legend--item">
+                      <svg class="legend__item--icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#F03460"/>
+                        </svg>
+                        <span class="legend__item--text">Comissão a pagar</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="resales__ranking">
+          <h3 class="resales__ranking--title"><img src="./assets/img/trofeu.png" alt=""> Ranking de revendedores</h3>
+          <div class="ranking__list">
+            <ul class="ranking__list--scroll"></ul>
+          </div>
+          <div class="resales__ranking--footer">
+            <button class="resales__ranking--more">Ver todos</button>
+          </div>
+        </div>
+      </div>
+        <div class="insights__board">
+          <div class="insight__board--title">
+            <img src="./assets/img/eyes.png" alt="" srcset="">
+            <h3 class="insights__board--name">Insights</h3>
+          </div>
+          <div class="insights__board--main">
+            <h3 class="board__main--title">Produtos mais vendidos</h3>
+            <div class="board__main--table">
+              <table class="main__table">
+                <thead class="main__table--head">
+                  <tr class="main__table--titles">
+                    <th scope="col" class="main__table--title">Produto</th>
+                    <div class="main__table--right">
+                      <th scope="col" class="main__table--title">Número do Pedido</th>
+                      <th scope="col" class="main__table--title">Departamento</th>
+                      <th scope="col" class="main__table--title">Valor</th>
+                    </div>
+                  </tr>
+                </thead>
+                  <tbody class="main__table--body"></tbody>
+              </table>              
+              <div class="table__footer">
+                  <div class="footer__counter">
+                    <span class="footer__counter--showing">Exibindo</span>
+                    <label class="footer__select--arrow">
+                      <select class="footer__counter--selection">
+                        <option>05</option>
+                        <option selected>10</option>
+                        <option >20</option>
+                      </select>
+                    </label>                      
+                    <span class="footer__counter--perpage">produtos por pagina</span>
+                </div>
+                <div class="footer__pagination">
+                  <svg class="arrow__pagination arrow--left" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#F1F2F9"/>
+                    <path d="M13 9L10 12L13 15" stroke="#425DC7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="pagination__number pagination--1">1</span>
+                    <span class="pagination__number pagination--2">2</span>
+                    <span class="pagination__number pagination--3">3</span>
+                    <svg class="arrow__pagination arrow--right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#F1F2F9"/>
+                      <path d="M10.9999 15L13.9999 12L10.9999 9" stroke="#425DC7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>                      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./assets/javascript/dashboard.js"></script>
+</body>
+</html>
